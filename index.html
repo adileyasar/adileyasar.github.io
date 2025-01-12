@@ -62,7 +62,8 @@
 
         /* Profile Section */
         .profile {
-            flex: 1 1 300px;
+            flex: 1 1 250px;
+            max-width: 300px; /* Restrict maximum width */
             text-align: center;
             background: #fff;
             border-radius: 15px;
@@ -87,7 +88,8 @@
 
         /* Main Content Section */
         .content {
-            flex: 2 1 600px;
+            flex: 2 1 500px; /* Reduce the flex-basis for balance */
+            max-width: 500px; /* Restrict maximum width */
             background: #fff;
             border-radius: 15px;
             padding: 25px;
@@ -128,8 +130,9 @@
                 font-size: 16px;
                 margin: 0 10px;
             }
-            .content {
+            .profile, .content {
                 flex: 1 1 100%;
+                max-width: 100%;
             }
         }
     </style>
@@ -151,20 +154,17 @@
     <div class="container">
         <!-- Profile Section -->
         <div class="profile">
-            
-            
             <img src="Picture_adi.jpg" alt="Adile Yasar">
             <p>Doctoral researcher at the Max Planck Institute for Evolutionary Biology.</p>
-            <a href="mailto:yasar@evolbio.mpg.de" target="_blank">Email </a>
+            <a href="mailto:yasar@evolbio.mpg.de" target="_blank">Email</a>
             <a href="https://bsky.app/profile/adileyasar.bsky.social" target="_blank">Bluesky</a>
             <a href="https://github.com/adileyasar" target="_blank">GitHub</a>
-            
         </div>
 
         <!-- Content Section -->
         <div class="content">
             <h2>About Me</h2>
-            <p>Hello there! I am a doctoral researcher working on experimens to understand human cooperation and cumulative cultural evolution.</p>
+            <p>Hello there! I am a doctoral researcher working on experiments to understand human cooperation and cumulative cultural evolution.</p>
             <h2>Research Interests</h2>
             <ul>
                 <li><strong>Which contexts enable human cooperation?</strong> I study this question by manipulating
