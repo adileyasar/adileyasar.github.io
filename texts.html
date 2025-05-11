@@ -18,15 +18,20 @@
             font-size: 36px;
             margin-bottom: 30px;
         }
-        a {
+        .text-link-container {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+        .text-link-container a {
             text-decoration: none;
             color: #007BFF;
             font-weight: 600;
+            font-size: 19px;
             display: block;
-            margin: 12px 0;
+            padding: 10px 0;
         }
         img {
-            max-width: 400px;
+            max-width: 320px;
             width: 100%;
             height: auto;
             margin: 30px auto 20px;
@@ -39,7 +44,9 @@
 <body>
     <h1>Texts</h1>
 
-    <a href="one-of-these-other-people.html">One of these other people</a>
+    <div class="text-link-container">
+        <a href="one-of-these-other-people.html">Read: One of these other people</a>
+    </div>
 
     <img src="Feen2.jpg" alt="Feen image">
 
